@@ -3,20 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>__weak</string>
+	<string>dispatch</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;
-</string>
+	<string>    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        &lt;#code#&gt;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            &lt;#code#&gt;
+        });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>69AAC17A-7007-430C-8FD4-A96EE86873C0</string>
+	<string>C95064D5-981A-4E7A-BC60-7C691AB5F12F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weak self</string>
+	<string>background-&gt;main</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
